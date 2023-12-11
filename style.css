@@ -1,0 +1,104 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: #222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
+    font-size: 120%;
+}
+
+.card{
+    background: #000;
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    font-weight: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    margin: 0.5em;
+    border-radius: 47%;
+    border: none;
+    height: 46px;
+    outline: none;
+    background: #7c7c7c2b;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+h1{
+    margin: 5px;
+    padding: 5px;
+}
+#city{
+    margin: 5px;
+    padding: 5px;
+}
+#date{
+    margin: 5px;
+    padding: 5px;
+}
+input#search-bar{
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    text-transform: capitalize;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(100%-100px);
+}
+button:hover{
+    background:#7c7c7c2b ;
+}
+h1.celcius{
+    margin: 0;
+}
+span#humidity{
+    padding: 9px;
+}
+
+p{
+    margin: 0px;
+    padding: 6px;
+    justify-content: space-between;
+    font-weight: 500;
+}
+span#winds{
+    padding: 9px;
+    font-weight: 400;
+}
+
+img{
+    /* margin-left: 12px; */
+    width: 150px;
+    /* padding: 10; */
+    justify-content: center;
+}
+#footer{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#description{
+    text-align: center;
+    font-weight: 600;
+}
+#error{
+    text-align: center;
+    color: crimson;
+    margin: 20px;
+    display: none;
+}
