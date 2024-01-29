@@ -1,102 +1,91 @@
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background: #222;
+    background: #3498db; /* Change the background color */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-image: url('https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2Vic2l0ZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60');
-    font-size: 120%;
+    background-size: cover; /* Ensure the background image covers the entire screen */
+    font-size: 16px; /* Adjust the base font size */
 }
-
-.card{
-    background: #000;
+.card {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background color for the card */
     color: white;
     padding: 2em;
-    border-radius: 30px;
-    font-weight: 100%;
+    border-radius: 15px; /* Adjust border-radius */
+    font-weight: 400; /* Adjust font weight */
     max-width: 420px;
     margin: 1em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add a subtle box shadow */
 }
-
-.search{
+.search {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px; /* Add some top margin */
 }
-button{
+button {
     margin: 0.5em;
-    border-radius: 47%;
+    border-radius: 5px; /* Smaller border-radius */
     border: none;
-    height: 46px;
+    height: 40px; /* Adjust button height */
     outline: none;
-    background: #7c7c7c2b;
+    background: #34495e; /* Change button background color */
     color: white;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
-h1{
+h1 {
+    margin: 10px 0; /* Adjust top and bottom margin */
+    padding: 10px;
+    font-size: 24px; /* Increase heading font size */
+}
+#city, #date {
     margin: 5px;
     padding: 5px;
+    font-size: 18px; /* Adjust font size */
 }
-#city{
-    margin: 5px;
-    padding: 5px;
-}
-#date{
-    margin: 5px;
-    padding: 5px;
-}
-input#search-bar{
+input#search-bar {
     border: none;
     outline: none;
     padding: 0.5em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
+    border-radius: 5px; /* Smaller border-radius */
+    background: #34495e; /* Change input background color */
     color: white;
     text-transform: capitalize;
     font-family: inherit;
-    font-size: 120%;
-    width: calc(100%-100px);
+    font-size: 16px;
+    width: calc(100% - 20px); /* Adjust width */
 }
-button:hover{
-    background:#7c7c7c2b ;
+button:hover {
+    background: #2c3e50; /* Darker color on hover */
 }
-h1.celcius{
+h1.celsius {
     margin: 0;
+    font-size: 20px; /* Adjust font size */
 }
-span#humidity{
-    padding: 9px;
+span#humidity, span#winds {
+    padding: 5px; /* Smaller padding */
+    font-size: 14px; /* Adjust font size */
 }
-
-p{
-    margin: 0px;
-    padding: 6px;
-    justify-content: space-between;
-    font-weight: 500;
+img {
+    width: 100%; /* Make the image responsive */
+    border-radius: 10px; /* Add border-radius */
 }
-span#winds{
-    padding: 9px;
-    font-weight: 400;
-}
-
-img{
-    /* margin-left: 12px; */
-    width: 150px;
-    /* padding: 10; */
-    justify-content: center;
-}
-#footer{
-    margin: 0px;
-    padding: 0px;
+#footer {
+    margin-top: 20px; /* Add top margin */
+    padding: 10px;
     text-align: center;
+    font-size: 14px; /* Adjust font size */
 }
-#description{
+#description {
     text-align: center;
     font-weight: 600;
+    margin-top: 10px; /* Add top margin */
 }
-#error{
+#error {
     text-align: center;
     color: crimson;
     margin: 20px;
